@@ -8,6 +8,7 @@ def similar(a, b):
 s = SpellChecker("en_US")
 print ('Enter sentence')
 text = input()
+# text = "SAMPLE FOR PPT\nSAMPLE PPT TEXT YO"
 s.set_text(text)
 correctedInput = s.get_text()
 for err in s:
@@ -22,3 +23,6 @@ for err in s:
             bestratio = ratio
     correctedInput = correctedInput.replace(err.word, suggestedWord)
 print(correctedInput)
+# text_file = open("Output.txt", "w")
+# text_file.write(correctedInput)
+# text_file.close()
