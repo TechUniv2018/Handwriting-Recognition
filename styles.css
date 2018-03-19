@@ -8,13 +8,32 @@ body{
     flex-grow: 1;
     flex-direction: column;
 }
-
-.Heading{
+.rightPane{
     display: flex;
     flex-grow: 1;
-    background-color: rgb(22, 75, 164);
+    flex-direction: column;
+}
+.Heading{
+    display: flex;
+    /* background-color: rgb(22, 75, 164); */
+    background-image: linear-gradient(to right,rgb(42, 104, 210),rgb(12, 40, 89));
     color: rgb(249, 249, 249);
     padding: 15px;
+    width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: 1;
+}
+.HeadingText{
+    display: flex;
+    /* background-color: rgb(22, 75, 164); */
+    color: rgb(249, 249, 249);
+    /* padding: 15px; */
+    width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: 1;
 }
 
 .list-item{
@@ -33,8 +52,25 @@ body{
 
 .Navbar{
     display: flex;
-    flex: 1;
     flex-direction: column;
+    flex-wrap: wrap;
+    /* background-color: rgb(22, 75, 164);
+    border-right: 2px solid white; */
+    width: 200px;
+    padding-top: 85px;
+    height: 100vh;
+    background-image: linear-gradient(to bottom,rgb(22, 75, 164),rgb(12, 40, 89));
+}
+
+.Nav-links{
+    margin: 10px;
+}
+
+.Nav-links > a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
 }
 
 .Pagecontent{
